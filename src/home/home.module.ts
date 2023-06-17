@@ -6,6 +6,7 @@ import { HomeService } from './home.service';
 import { UsersModule } from '../users/users.module';
 import { AuthModule } from '../auth/auth.module';
 import { TokenModule } from '../token/token.module';
+import { BlogsModule } from '../blogs/blogs.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { TokenModule } from '../token/token.module';
     AuthModule,
     UsersModule,
     TokenModule,
+    BlogsModule,
   ],
   controllers: [HomeController],
   providers: [HomeService],
